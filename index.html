@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.5" name="viewport"/>
+<title>Tri-Community Adult Learning Association · Stony Plain</title>
+<meta content="Tri-Community Adult Learning Association is a nonprofit based in Stony Plain, Alberta, offering adult literacy, community support, volunteer opportunities, and donation pathways — all rooted in local prairie community." name="description"/>
+<meta content="Tri-Community Adult Learning Association" property="og:title"/>
+<meta content="Adult learning rooted in community. Programs, support, and volunteer opportunities for adults in Stony Plain and surrounding areas." property="og:description"/>
+<meta content="https://images.pexels.com/photos/1848924/pexels-photo-1848924.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Tri-Community Adult Learning Association" name="twitter:title"/>
+<meta content="Adult learning rooted in community. Programs, support, and volunteer opportunities for adults in Stony Plain and surrounding areas." name="twitter:description"/>
+<meta content="https://images.pexels.com/photos/1848924/pexels-photo-1848924.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Lato:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<style>
+        :root {
+            --primary: #2E5C4E;
+            --secondary: #C4A35A;
+            --accent: #D96C4A;
+            --text: #1C1C1C;
+            --background: #F9F6F0;
+            --muted-bg: #EDE8DC;
+            --heading-font: 'Playfair Display', serif;
+            --body-font: 'Lato', sans-serif;
+            --max-content: 1200px;
+            --wood-light: #E2D9C8;
+            --wood-shadow: #B8A98C;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--body-font);
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 100 100'%3E%3Cpath fill='%23C4A35A' opacity='0.04' d='M50 10L61.6 38.2H92L67.7 56.8L78.2 85L50 66.4L21.8 85L32.3 56.8L8 38.2H38.4L50 10Z'/%3E%3C/svg%3E");
+            background-size: 140px 140px;
+        }
+        .container { max-width: var(--max-content); margin: 0 auto; padding: 0 1.5rem; }
+        img { max-width: 100%; display: block; height: auto; }
+        a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
+        a:hover { color: var(--accent); }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.7rem 1.8rem;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .btn:hover { background: #1f4238; color: #fff; transform: translateY(-1px); }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        .btn-outline:hover { background: var(--primary); color: #fff; }
+        .section-title {
+            font-family: var(--heading-font);
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            letter-spacing: -0.01em;
+        }
+        .section-sub { font-size: 1.1rem; color: #3f3f3f; max-width: 700px; }
+        
+        .site-header {
+            padding: 1rem 1.5rem;
+            background: var(--background);
+            border-bottom: 1px solid var(--wood-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+        }
+        .site-header .org-name {
+            font-family: var(--heading-font);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+        .site-header .org-name small {
+            font-family: var(--body-font);
+            font-weight: 300;
+            font-size: 0.9rem;
+            color: #4a5f58;
+            display: block;
+        }
+        .header-proof {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.5rem;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #2f4a41;
+        }
+        .header-proof span { background: var(--muted-bg); padding: 0.2rem 0.8rem; border-radius: 30px; }
+        .header-proof a { font-weight: 600; text-decoration: none; background: var(--muted-bg); padding: 0.2rem 0.8rem; border-radius: 30px; }
+        
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: flex-end;
+            background: var(--muted-bg);
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 30% 20%;
+            filter: saturate(0.9) brightness(0.85);
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(46,92,78,0.7) 0%, rgba(46,92,78,0.2) 60%, transparent 80%);
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 3rem 1.5rem 4rem;
+            max-width: var(--max-content);
+            margin: 0 auto;
+            width: 100%;
+        }
+        .hero-content h1 {
+            font-family: var(--heading-font);
+            font-size: clamp(2.6rem, 8vw, 4.8rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.1;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            max-width: 900px;
+        }
+        .hero-content .hero-sub {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.92);
+            margin: 1.2rem 0 2rem;
+            max-width: 650px;
+            font-weight: 300;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+        .hero-actions .btn { background: var(--secondary); color: #1C1C1C; font-weight: 700; }
+        .hero-actions .btn:hover { background: #b08f44; }
+        .hero-actions .btn-outline-light {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        .hero-actions .btn-outline-light:hover { background: #fff; color: var(--primary); }
+        .proof-strip {
+            background: var(--muted-bg);
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 2rem;
+            justify-content: center;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #d6cdbb;
+        }
+        .proof-strip span { color: #2b4a3f; }
+        .proof-strip a { font-weight: 600; }
+        
+        .about-section {
+            padding: 5rem 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .about-text p { font-size: 1.1rem; margin-bottom: 1.2rem; }
+        .about-collage {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+        }
+        .about-collage img {
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: sepia(0.1) brightness(0.98);
+        }
+        .about-collage img:nth-child(1) { grid-column: 1 / 3; height: 220px; }
+        
+        .programs-section {
+            padding: 4rem 0;
+            background: var(--muted-bg);
+        }
+        .programs-scroll {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            padding: 1rem 0 2rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .programs-scroll::-webkit-scrollbar { height: 6px; }
+        .programs-scroll::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 20px; }
+        .program-card {
+            min-width: 280px;
+            max-width: 320px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem 1.2rem 1.8rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            scroll-snap-align: start;
+            border-left: 6px solid var(--secondary);
+            transition: transform 0.15s;
+            flex-shrink: 0;
+        }
+        .program-card:hover { transform: translateY(-3px); }
+        .program-card h3 { font-family: var(--heading-font); font-size: 1.4rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .program-card p { color: #2f3e39; font-size: 0.95rem; }
+        .program-card .card-img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        
+        .why-section {
+            padding: 5rem 0;
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem 3rem;
+        }
+        .why-item {
+            display: flex;
+            gap: 1.2rem;
+            align-items: flex-start;
+        }
+        .why-icon {
+            font-size: 2rem;
+            min-width: 48px;
+            color: var(--secondary);
+        }
+        .why-item h4 { font-family: var(--heading-font); font-size: 1.3rem; color: var(--primary); }
+        .why-item p { color: #2f3e39; }
+        
+        .river-band {
+            background: var(--primary);
+            padding: 3rem 0;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .river-band::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 20px, transparent 20px, transparent 40px);
+            pointer-events: none;
+        }
+        .river-content {
+            max-width: var(--max-content);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            color: #f0ede4;
+            font-style: italic;
+            font-size: 1.3rem;
+            font-weight: 300;
+            text-align: center;
+        }
+        .river-content strong { font-style: normal; font-weight: 600; color: var(--secondary); }
+        
+        .gallery-section {
+            padding: 4rem 0;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            filter: brightness(0.95) sepia(0.05);
+            transition: filter 0.2s;
+        }
+        .gallery-grid img:hover { filter: brightness(1.02); }
+        
+        .contact-section {
+            padding: 4rem 0 3rem;
+            background: var(--muted-bg);
+        }
+        .contact-block {
+            max-width: 680px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact-block p { margin: 0.6rem 0; font-size: 1.05rem; }
+        .contact-block a { font-weight: 600; }
+        .contact-block .address { font-style: normal; }
+        .contact-form { margin-top: 2rem; text-align: left; }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            font-family: var(--body-font);
+            font-size: 1rem;
+            background: #fff;
+            margin-bottom: 1rem;
+        }
+        .contact-form textarea { min-height: 100px; border-radius: 20px; }
+        .contact-form .btn { width: 100%; }
+        
+        .site-footer {
+            padding: 2rem 1.5rem;
+            background: var(--background);
+            border-top: 1px solid var(--wood-light);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #3b4f48;
+        }
+        .site-footer a { color: var(--primary); }
+        .back-top { font-size: 1.4rem; line-height: 1; }
+        
+        @media (max-width: 800px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-content h1 { font-size: 2.4rem; }
+            .site-header { flex-direction: column; align-items: flex-start; }
+            .header-proof { width: 100%; }
+        }
+        @media (max-width: 500px) {
+            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .gallery-grid img { height: 150px; }
+            .program-card { min-width: 240px; }
+        }
+        
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 2rem; }
+        .mb-1 { margin-bottom: 1rem; }
+        .pb-0 { padding-bottom: 0; }
+        .pt-0 { padding-top: 0; }
+    </style>
+</head>
+<body>
+<header class="site-header">
+<div class="org-name">
+            Tri-Community Adult Learning Association
+            <small>Stony Plain · Alberta</small>
+</div>
+<div class="header-proof">
+<span>📍 Stony Plain &amp; area</span>
+<span>📚 Adult learning</span>
+<a href="https://www.tricala.ca" rel="noopener" target="_blank">tricala.ca ↗</a>
+</div>
+</header>
+<section class="hero" id="hero">
+<img alt="quiet reading nook" class="hero-bg" height="800" loading="eager" src="https://images.pexels.com/photos/1848924/pexels-photo-1848924.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Learning Together<br/>in Stony Plain</h1>
+<p class="hero-sub">Tri-Community Adult Learning Association offers programs, support, and volunteer opportunities for adults in our community.</p>
+<div class="hero-actions">
+<a class="btn" href="#about">Read the summary</a>
+<a class="btn btn-outline-light" href="https://www.tricala.ca" rel="noopener" target="_blank">Check source record</a>
+</div>
+</div>
+</section>
+<div class="proof-strip">
+<span>📍 Serving Stony Plain &amp; surrounding communities</span>
+<span>📖 Nonprofit · Adult literacy · Community support</span>
+<a href="https://www.tricala.ca" rel="noopener" target="_blank">View original site</a>
+</div>
+<section class="about-section" id="about">
+<div class="container about-grid">
+<div class="about-text">
+<h2 class="section-title">Field notes</h2>
+<p>Tri-Community Adult Learning Association is a nonprofit based in Stony Plain, Alberta, dedicated to providing adult learning opportunities. We offer programs and support to help adults build skills and connect with their community.</p>
+<p>Rooted in Stony Plain since our founding. Programs designed by and for local adults. Free or low-cost services for all. Volunteer-driven with community support.</p>
+<a class="btn btn-outline" href="#contact">Contact us</a>
+</div>
+<div class="about-collage">
+<img alt="adults chatting in community center" height="800" loading="lazy" src="https://images.pexels.com/photos/6238169/pexels-photo-6238169.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="Stony Plain main street autumn" height="800" loading="lazy" src="https://images.pexels.com/photos/14456574/pexels-photo-14456574.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="community garden raised beds" height="800" loading="lazy" src="https://images.pexels.com/photos/37487180/pexels-photo-37487180.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+</section>
+<section class="programs-section" id="programs">
+<div class="container">
+<h2 class="section-title">Program snapshot</h2>
+<p class="section-sub mb-1">Four contact paths — each one staffed by local volunteers and coordinators.</p>
+<div class="programs-scroll">
+<div class="program-card">
+<img alt="adult literacy tutoring" class="card-img" height="800" loading="lazy" src="https://images.pexels.com/photos/36764628/pexels-photo-36764628.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h3>Adult Literacy Programs</h3>
+<p>Basic reading, writing, and numeracy support for adults.</p>
+</div>
+<div class="program-card">
+<img alt="community support" class="card-img" height="800" loading="lazy" src="https://images.pexels.com/photos/7551644/pexels-photo-7551644.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h3>Community Support</h3>
+<p>Guidance and referrals to local resources.</p>
+</div>
+<div class="program-card">
+<img alt="volunteer sorting books" class="card-img" height="800" loading="lazy" src="https://images.pexels.com/photos/6994869/pexels-photo-6994869.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h3>Volunteer Opportunities</h3>
+<p>Help adults learn by tutoring or assisting with programs.</p>
+</div>
+<div class="program-card">
+<img alt="hands holding open book with maple leaf" class="card-img" height="800" loading="lazy" src="https://images.pexels.com/photos/29511002/pexels-photo-29511002.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h3>Donate</h3>
+<p>Your contribution supports free adult learning in our community.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="why-section" id="why">
+<div class="container">
+<h2 class="section-title">Community map</h2>
+<div class="why-grid">
+<div class="why-item">
+<div class="why-icon">🌾</div>
+<div><h4>Rooted in Stony Plain</h4><p>Since our founding, we’ve been part of this prairie town.</p></div>
+</div>
+<div class="why-item">
+<div class="why-icon">📘</div>
+<div><h4>Designed by locals</h4><p>Programs shaped by and for adults in our community.</p></div>
+</div>
+<div class="why-item">
+<div class="why-icon">🕊️</div>
+<div><h4>Free or low-cost</h4><p>Barriers removed — everyone can learn.</p></div>
+</div>
+<div class="why-item">
+<div class="why-icon">🤝</div>
+<div><h4>Volunteer-driven</h4><p>Neighbours helping neighbours build skills.</p></div>
+</div>
+</div>
+</div>
+</section>
+<div class="river-band">
+<div class="river-content">
+            “<strong>Adult learning rooted in community.</strong> Every class, every conversation, every book opened — that’s the river that runs through Stony Plain.”
+        </div>
+</div>
+<section class="gallery-section" id="gallery">
+<div class="container">
+<h2 class="section-title">Scenes from the community</h2>
+<div class="gallery-grid">
+<img alt="adults painting in art class" height="800" loading="lazy" src="https://images.pexels.com/photos/5757066/pexels-photo-5757066.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="multiracial students sitting together" height="800" loading="lazy" src="https://images.pexels.com/photos/5940846/pexels-photo-5940846.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+</section>
+<section class="contact-section" id="contact">
+<div class="container contact-block">
+<h2 class="section-title">Fast contact</h2>
+<p class="address">115 – 4302 33 ST, STONY PLAIN, AB</p>
+<p><a href="tel:+17805913355">(780) 591-3355</a> · <a href="mailto:info@tricala.ca">info@tricala.ca</a></p>
+<p style="margin-top: 0.5rem; font-size: 0.95rem;">Reach out to ask about programs, donations, or volunteering.</p>
+<div class="contact-form">
+<form action="mailto:info@tricala.ca" enctype="text/plain" method="post">
+<input name="name" placeholder="Your name" required="" type="text"/>
+<input name="phone_or_subject" placeholder="Phone or subject" type="text"/>
+<textarea name="message" placeholder="Tell us what you’re looking for — literacy support, volunteering, donations, or general contact."></textarea>
+<button class="btn" type="submit">Send message</button>
+</form>
+</div>
+<div style="margin-top: 2rem; font-size: 0.95rem; background: #e3dbcd; padding: 1rem 1.5rem; border-radius: 40px;">
+<strong>What happens next?</strong> We read every message. We’ll reply by phone or email to talk about programs, donations, or volunteering — and confirm the best next step for you.
+            </div>
+</div>
+</section>
+<footer class="site-footer">
+<div>© <span id="year"></span> Tri-Community Adult Learning Association</div>
+<div>
+<span>Photos: <a href="https://www.pexels.com/photo/man-wearing-eyeglasses-and-hoodie-inside-library-1848924/" rel="noopener" target="_blank">Malte Luk</a>, <a href="https://www.pexels.com/photo/young-diverse-students-chatting-near-window-6238169/" rel="noopener" target="_blank">Monstera</a>, <a href="https://www.pexels.com/photo/grandfather-helping-grandson-with-homework-36764628/" rel="noopener" target="_blank">Vitaly Gariev</a> &amp; others (Pexels)</span>
+<a aria-label="back to top" class="back-top" href="#hero">↑</a>
+</div>
+</footer>
+<script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
